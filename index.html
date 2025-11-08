@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para el Amor de Mi Vida</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="floating-hearts" id="hearts-container"></div>
+    <div class="rose-petals" id="petals-container"></div>
+
+    <div class="container">
+      <div class="header">
+        <h1>
+          Para <span class="heart">❤</span>
+          <span id="novia-name">Lilibeth</span> <span class="heart">❤</span>
+        </h1>
+        <p>Eres la razón por la que mi corazón late</p>
+      </div>
+
+      <div class="music-section">
+        <h2><i class="fas fa-music"></i> Cancion de tu Cantante Favorito</h2>
+        <p>Esta melodía siempre me recuerda a ti y a nuestro amor</p>
+        <div class="music-player">
+          <div class="album-cover">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+          <div class="song-info">
+            <h3 id="song-title">Tu Canción Favorita</h3>
+            <p id="song-artist">Tu Cantante Favorito</p>
+          </div>
+          <div class="player-controls">
+            <button
+              id="play-btn"
+              title="Reproducir canción"
+              aria-label="Reproducir canción"
+            >
+              <i class="fas fa-play"></i>
+            </button>
+            <button
+              id="mute-btn"
+              title="Silenciar canción"
+              aria-label="Silenciar canción"
+            >
+              <i class="fas fa-volume-up"></i>
+            </button>
+          </div>
+        </div>
+        <p class="music-note">
+          <em>Escucha nuestra canción mientras lees esto</em>
+        </p>
+      </div>
+
+      <div class="message-section">
+        <h2><i class="fas fa-heart"></i> Mi Más Sincera Disculpa</h2>
+        <div class="message-content">
+          <p>Mi amor,</p>
+          <p>
+            Hoy escribo estas palabras con el corazón en la mano, reconociendo
+            que he cometido errores que te han lastimado. No hay excusa que
+            justifique el dolor que te he causado, y por eso quiero pedirte
+            perdón desde lo más profundo de mi ser.
+          </p>
+          <p>
+            Nuestra relación es el tesoro más valioso que tengo, y la idea de
+            perderte me ha hecho reflexionar sobre mis acciones y sobre lo
+            infinitamente especial que eres. Eres la persona que ilumina mis
+            días, la que da sentido a mi existencia.
+          </p>
+          <p>
+            Te prometo que voy a trabajar cada día para ser la persona que
+            mereces, para escucharte con el alma, entenderte con el corazón y
+            nunca más darte motivos para dudar de mi amor por ti. Eres mi todo,
+            y lucharé por nosotros con todas mis fuerzas.
+          </p>
+        </div>
+      </div>
+
+      <div class="promise-section">
+        <h2><i class="fas fa-hand-holding-heart"></i> Mis Promesas Para Ti</h2>
+        <div class="promises-container">
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-ear-listen"></i>
+            </div>
+            <p>Escucharte con atención y sin juicios, con el corazón abierto</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-hands-holding-heart"></i>
+            </div>
+            <p>Ser más comprensivo y paciente con tus sentimientos</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <p>Valorar cada momento a tu lado como un regalo precioso</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-heart-circle-plus"></i>
+            </div>
+            <p>Hacerte sentir amada, admirada y especial cada día</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-home-heart"></i>
+            </div>
+            <p>Construir juntos un futuro lleno de felicidad</p>
+          </div>
+          <div class="promise-card">
+            <div class="promise-icon">
+              <i class="fas fa-dove"></i>
+            </div>
+            <p>Nunca dejar que el orgullo se interponga entre nosotros</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="final-message">
+        <div class="message-bubble">
+          <p>
+            Eres mi persona favorita en este mundo, mi razón para ser mejor cada
+            día.
+          </p>
+          <p>
+            No quiero imaginar mi vida sin tu sonrisa, sin tu mirada, sin tu
+            amor.
+          </p>
+          <p class="question">
+            ¿Me darías la oportunidad de demostrarte cuánto te amo?
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button id="yes-btn" class="romantic-btn">
+          <i class="fas fa-heart"></i>
+          <span>SÍ, TE AMO</span>
+        </button>
+        <button id="no-btn" class="romantic-btn">
+          <i class="fas fa-clock"></i>
+          <span>NECESITO PENSARLO</span>
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Hecho con todo mi amor y esperanza - <span id="tu-nombre">Alex</span>
+      </p>
+    </footer>
+
+    <!-- REEMPLAZA ESTA URL CON LA DE TU ARCHIVO MP3 -->
+    <audio id="love-song" loop>
+      <source
+        src="Lil Peep - Star Shopping (Official Audio) - Lil Peep.mp3"
+        type="audio/mp3"
+      />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
